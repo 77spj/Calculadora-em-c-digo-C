@@ -1,0 +1,48 @@
+#include<stdio.h>
+int main() {
+    float  num1, num2, resultado; // Variáveis para armazenar os valores inseridos pelo usuário e o resultado da calculadora
+    int operacao; 
+    
+    printf("Seja bem vindo a Calculadora em C\n");             // Apresentação e solicitação da operação matemática e valores para a calculadora
+    printf("1 - Soma/Adição \n");
+    printf("2 - Subtração/Diminuir\n");
+    printf("3 - Multiplicação\n");
+    printf("4 - Divisão\n");
+    printf("Qual operação deseja utilizar?\n");
+    scanf("%d", &operacao);
+    
+    printf("Digite o primeiro valor: ");  
+    scanf("%f", &num1);
+    printf("Digite o segundo valor: ");
+    scanf("%f", &num2);
+
+    switch(operacao) {            //  estrutura de controle que facilita a escolha entre múltiplas execuções possíveis com base no valor de uma variável ou expressão
+        
+        case 1:
+        resultado=(num1+num2);
+        printf("Resultado: %.2f\n", resultado);
+        break;
+        
+        case 2:
+        resultado=(num1-num2);
+        printf("Resultado: %.2f\n", resultado);
+        break;
+
+        case 3:
+        resultado=(num1*num2);
+        printf("Resultado: %.2f\n", resultado);
+        break;
+
+        case 4:
+        resultado=(num1/num2);
+        if(num2!= 0);
+        printf("Resultado: %.2f\n", resultado);
+        break;
+     
+     default:  // exibirá uma mensagem quando nenhuma das alternativas anteriores for verdadeira. 
+     printf("Operação inválida!\n");
+     break;
+    }
+     
+    return 0;
+}
