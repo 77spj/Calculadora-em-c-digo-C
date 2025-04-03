@@ -1,2 +1,2 @@
-# Calculadora-em-c-digo-C
+# Calculadora-em-codigo-C
 Calculadora em código C
